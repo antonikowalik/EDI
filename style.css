@@ -1,0 +1,98 @@
+body {
+    background-color: #fdfcf7;
+    font-family: 'Roboto', 'sans-serif';
+    margin: 200px;
+}
+.main-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ABB4FE;
+    position: absolute;
+    font-size: 17px;;
+    left: 50px;
+    color: white;
+    transform: translateY(-50%);
+    top: 11%;
+  }
+
+  /* Stylowanie guzika po kliknięciu - wszystkie style raczej do css próbujemy wepchnąć a JS zostawić dla samego działania i logiki skryptów */
+.main-btn:active{
+    background-color: #cdd3ff;
+}
+
+
+.title {
+    text-align: center;
+    font-family: 'Faster One', 'sans-serif';
+    font-weight: bold;
+    font-size: 116px;
+    line-height: 66px;
+    color: #ABB4FE;
+    margin-top: 400px;
+    letter-spacing: 25px;
+}
+
+.title-small {
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Roboto', 'sans-serif';
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #000000;
+    padding: 0;
+}
+
+.by {
+    margin-top: 100px;
+}
+
+.text {
+    color: white;
+}
+
+.chart1 {
+    margin-top: 200px;
+}
+
+.container {
+    margin-top: 200px;
+
+}
+table {
+    font-family: 'Arial', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    background-color: #ABB4FE; /* blue */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+  }
+  
+  td {
+    background-color: #e1f5fe; /* light blue */
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+  }
+  
+  tr:hover {
+    background-color: #bbdefb; /* lighter blue */
+  }
+
+.margin-top-200{
+    margin-top: 200px;
+}
+
+  
