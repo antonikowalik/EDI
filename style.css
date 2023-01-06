@@ -4,18 +4,21 @@ body {
     background: linear-gradient( #e0e4ff, #fdfcf7);
     font-family: 'Roboto', 'sans-serif';
     margin: 0px;
-    padding: 0 15%;
-    min-height: 100vh
+    padding: 0 12%;
+    min-height: 100vh;
+    min-width: 100vh;
 }
 
 main {
   background-color: #fdfcf7;
-  padding-top: 200px;
+  padding-top: 100px;
+  
 }
 
+
 .main-btn {
-    width: 44px;
-    height: 44px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     border: none;
     background-color: #ABB4FE;
@@ -27,12 +30,11 @@ main {
     position: fixed;
   }
 
-  /* crv - Stylowanie guzika po kliknięciu - wszystkie style raczej do css próbujemy wepchnąć a JS zostawić dla samego działania i logiki skryptów */
 .main-btn:hover{
     background-color: white;
     cursor: pointer;
-    width: 54px;
-    height: 54px;
+    width: 55px;
+    height: 55px;
 }
 
 
@@ -41,13 +43,26 @@ main {
     font-family: 'Faster One', 'sans-serif';
     font-weight: bold;
     color: #ABB4FE;
-    font-size: 116px;
+    font-size: 6vw;
     line-height: 66px;
     letter-spacing: 25px;
     margin-bottom: 100px;
 }
 
+@media (max-width: 600px) {
+  .title {
+    font-size: 72px;
+  }
+  .main-btn{
+    left: 20px;
+  }
+}
 
+img{
+  width: 35px;
+  height: 35px;
+  color:#ABB4FE
+}
 
 .title-small {
     letter-spacing: 5px;
@@ -73,20 +88,25 @@ main {
 
 }
 
+.table-box{
+  overflow-x: auto;
+}
+
 table {
-    font-family: 'Arial', sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+  font-weight: bolder;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+
   }
   
   th {
     background-color: #ABB4FE; 
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     padding: 10px;
-    text-align: center;
-    border: 5px solid white;
+    border: 1px solid #e0e4ff;
   }
   
   td {
@@ -94,11 +114,8 @@ table {
     color: black;
     font-size: 14px;
     padding: 10px;
-    border: 2px solid white;
-  }
-  
-  tr:hover {
-    background-color: #bbdefb; 
+    border: 1px solid #ABB4FE;
+
   }
 
 .margin-top-100{
@@ -114,11 +131,12 @@ table {
     text-decoration: none;
     display: inline-block;
     font-size: 17px;
+    font-weight: bold;
     color: white;
     margin: 20px 20px;
     cursor: pointer;
     border-radius: 10px;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    outline: none;
   }
   
   #displayButton:hover {

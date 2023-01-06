@@ -12,9 +12,7 @@
 <body>
     <header>
         <div>
-            <a href="index.html">
-                <button class="main-btn"></button>
-            </a>
+                <button class="main-btn" id = "main-btn"><img src="home.png" alt="buttonpng" border="0" /></button>
         </div>
     </header>
     <main>
@@ -29,20 +27,21 @@
         <div class="player-array"></div>
         <div class="container">
           <h1 class="title title-small">PLAYERS</h1>
-          <button id="displayButton">Show Top 10 players</button>
-          <table id="player-array" class = "data">
-            <thead>
-                <th data-field = "id">Player Id</th>
-                <th data-field = "name">Name</th>
-                <th data-field = "score">Highest Score</th>
-                <th data-field = "rank">Rank</th> <!-- tymczasowe pole  -->
-                <th data-field = "country">Country</th>
-                <th data-field = "email">Email</th>
-                <th data-field = "ip_address">IP Address</th>
-                <th data-field = "registered">Joined</th>
-            </thead>
+          <button id="displayButton">TOP 10</button>
+          <div class ="table-box">
+            <table id="player-array" >
+              <thead>
+                  <th data-field = "name">Name</th>
+                  <th data-field = "score">Highest Score</th>
+                  <th data-field = "rank">Rank</th> <!-- tymczasowe pole  -->
+                  <th data-field = "country">Country</th>
+                  <th data-field = "email">Email</th>
+                  <th data-field = "ip_address">IP Address</th>
+                  <th data-field = "registered">Joined</th>
+              </thead>
 
-          </table>
+            </table>
+          </div>
         </div>
 
 
