@@ -4,20 +4,10 @@ displayButton.addEventListener("click", showTenPlayers);
 var homeButton = document.getElementById("main-btn");
 homeButton.addEventListener("click", scrollUp)
  
-window.onscroll = function() {scrollCheck()};
-
-function scrollCheck() {
-  if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
-    homeButton.style.display = "block";
-  } else {
-    homeButton.style.display = "none";
-  }
-}
 
 function scrollUp() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
-
 
 const API_URL = 'https://my.api.mockaroo.com/edi.json?key=953a0b00';
 //Na ten moment działa na innym api bo w dniu commitowania się wyczerpały requesty, a chce żeby coś się wyświetlało, jutro 06.01 jak odświeży się pula requestów to zmienię kod na dane pod tamten schemat//
