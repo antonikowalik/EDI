@@ -1,9 +1,3 @@
-const mainBtn = document.querySelector(".main-btn")
-
-mainBtn.addEventListener('click', function() {
-    mainBtn.style.backgroundColor = '#cdd3ff';
-})
-
 var button = document.getElementById("displayButton");
 button.addEventListener("click", showTenPlayers);
 

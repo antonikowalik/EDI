@@ -1,26 +1,38 @@
+
+
 body {
-    background-color: #fdfcf7;
+    background: linear-gradient( #e0e4ff, #fdfcf7);
     font-family: 'Roboto', 'sans-serif';
-    margin: 200px;
+    margin: 0px;
+    padding: 0 15%;
+    min-height: 100vh
 }
+
+main {
+  background-color: #fdfcf7;
+  padding-top: 200px;
+}
+
 .main-btn {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     border: none;
     background-color: #ABB4FE;
-    position: absolute;
     font-size: 17px;;
     left: 50px;
     color: white;
     transform: translateY(-50%);
     top: 11%;
-    
+    position: fixed;
   }
 
   /* crv - Stylowanie guzika po kliknięciu - wszystkie style raczej do css próbujemy wepchnąć a JS zostawić dla samego działania i logiki skryptów */
-.main-btn:active{
-    background-color: #cdd3ff;
+.main-btn:hover{
+    background-color: white;
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
 }
 
 
@@ -28,12 +40,14 @@ body {
     text-align: center;
     font-family: 'Faster One', 'sans-serif';
     font-weight: bold;
+    color: #ABB4FE;
     font-size: 116px;
     line-height: 66px;
-    color: #ABB4FE;
-    margin-top: 400px;
     letter-spacing: 25px;
+    margin-bottom: 100px;
 }
+
+
 
 .title-small {
     letter-spacing: 5px;
@@ -48,22 +62,17 @@ body {
     padding: 0;
 }
 
-.by {
-    margin-top: 100px;
-}
-
 .text {
     color: white;
+    font-size: 18px;
 }
 
-.chart1 {
-    margin-top: 200px;
-}
 
 .container {
-    margin-top: 200px;
+    margin-top: 100px;
 
 }
+
 table {
     font-family: 'Arial', sans-serif;
     border-collapse: collapse;
@@ -81,7 +90,7 @@ table {
   }
   
   td {
-    background-color: #e1f5fe; 
+    background-color: #e0e4ff; 
     color: black;
     font-size: 14px;
     padding: 10px;
@@ -92,26 +101,34 @@ table {
     background-color: #bbdefb; 
   }
 
-.margin-top-200{
-    margin-top: 200px;
+.margin-top-100{
+    margin-top: 100px;
 }
 
 #displayButton {
-    background-color: #ABB4FE; /* Light blue */
-    border: none;
+    background-color: #ABB4FE; 
+    border: white 3px solid;
     color: white;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
+    font-size: 17px;
+    color: white;
+    margin: 20px 20px;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   }
   
   #displayButton:hover {
-    background-color: #bbdefb;
+    background-color: #fdfcf7;
+    border: #ABB4FE 3px solid;
+    color: #ABB4FE;
   }
   
+
+  footer {
+    text-align: center;
+    padding: 100px 0 30px 0;
+  }
