@@ -10,10 +10,8 @@ function scrollUp() {
 }
 
 const API_URL = 'https://my.api.mockaroo.com/edi.json?key=953a0b00';
-//Na ten moment działa na innym api bo w dniu commitowania się wyczerpały requesty, a chce żeby coś się wyświetlało, jutro 06.01 jak odświeży się pula requestów to zmienię kod na dane pod tamten schemat//
-const test_url = 'https://random-data-api.com/api/v2/users?size=2&is_json=true';
 
-fetch("EDI.json")
+fetch(API_URL)
     .then(response => response.json())
     .then(data => {
       console.log(data);
