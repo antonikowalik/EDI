@@ -26,24 +26,34 @@
         <div class="player-array"></div>
         <div class="container">
           <h1 class="title title-small">PLAYERS</h1>
-          <button id="displayButton">TOP 10</button>
+
+          <div class="container-buttons">
+            <button id="displayButton">TOP 10</button>
+            <button id="dataset1Button" class = "datasetButton">Dataset 1</button>
+            <button id="dataset2Button" class = "datasetButton">Dataset 2</button>
+            <button id="dataset3Button" class = "datasetButton">Dataset 3</button>
+          </div>
+
           <div class ="table-box">
             <table id="player-array" >
               <thead>
                   <th data-field = "name">Name</th>
                   <th data-field = "score">Highest Score</th>
-                  <th data-field = "rank">Rank</th> <!-- tymczasowe pole  -->
+                  <th data-field = "rank">Rank</th>
                   <th data-field = "country">Country</th>
                   <th data-field = "email">Email</th>
                   <th data-field = "ip_address">IP Address</th>
                   <th data-field = "registered">Joined</th>
               </thead>
-
+              <tbody>
+              </tbody>
             </table>
+
           </div>
         </div>
+        
         <div class="container">
-          <h1 class="title title-small"> Ranks Divison </h1>
+          <h1 class="title title-small"> Ranks Division </h1>
           <div class="chartcon1">
             <canvas id="chart1"></canvas>
           </div>
@@ -55,14 +65,13 @@
             <canvas id="chart2"></canvas>
           </div>
         </div>
-    
+
     </main>
   <footer>
     <p class="text">© 2023 Group Project EDI</p>
   </footer>
 
   <script src="script.js"></script>
-  <script src="wykresiki.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

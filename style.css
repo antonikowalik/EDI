@@ -122,7 +122,35 @@ table {
     margin-top: 100px;
 }
 
+.container-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
 #displayButton {
+  background-color: #ABB4FE; 
+  border: white 3px solid;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  margin: 40px 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  }
+  
+  #displayButton:hover {
+    background-color: #fdfcf7;
+    border: #ABB4FE 3px solid;
+    color: #ABB4FE;
+  }
+
+  .datasetButton {
     background-color: #ABB4FE; 
     border: white 3px solid;
     color: white;
@@ -133,18 +161,21 @@ table {
     font-size: 17px;
     font-weight: bold;
     color: white;
-    margin: 20px 20px;
+    margin: 40px 40px;
     cursor: pointer;
     border-radius: 10px;
     outline: none;
+
   }
   
-  #displayButton:hover {
+  .datasetButton:hover {
     background-color: #fdfcf7;
     border: #ABB4FE 3px solid;
     color: #ABB4FE;
   }
-  
+  .datasetButton:focus {
+    outline: none;
+  }
 
   footer {
     text-align: center;
